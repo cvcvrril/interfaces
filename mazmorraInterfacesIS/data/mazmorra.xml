@@ -12,4 +12,12 @@
         <door name="Norte" dest="R0"/>
         <description>Habitación pequeña</description>
     </room>
+    <room id="R3">
+        <door name="Este" dest="R0"/>
+        <description>Habitación acolchada</description>
+    </room>
+    <room id="R4">
+        <door name="Oeste" dest="R0"/>
+        <description>Habitación vacía</description>
+    </room>
 </Dungeon>
