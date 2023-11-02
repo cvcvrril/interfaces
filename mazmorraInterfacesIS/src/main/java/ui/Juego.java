@@ -13,7 +13,9 @@ public class Juego {
     JFrame framePrincipal = new JFrame("Prueba");
     JButton botonPrueba = new JButton("Prueba");
     File fileXML = new File("data/mazmorra.xml");
-    private DefaultMutableTreeNode root;
+    DefaultMutableTreeNode dungeon = new DefaultMutableTreeNode("Dungeon");
+    DefaultMutableTreeNode roomR0 = new DefaultMutableTreeNode("room R0");
+    DefaultMutableTreeNode roomR1 = new DefaultMutableTreeNode("room R1");
     private DefaultTreeModel treeModel;
     JTree fileTree = new JTree();
 
@@ -24,14 +26,14 @@ public class Juego {
     }
 
     public void pruebaTree(){
-        framePrincipal.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        root = new DefaultMutableTreeNode(fileXML);
-        treeModel = new DefaultTreeModel(root);
 
-        fileTree = new JTree(root);
-        fileTree.setShowsRootHandles(true);
+        dungeon.add(roomR0);
+        dungeon.add(roomR1);
 
+        fileTree = new JTree(dungeon);
+        framePrincipal.add(fileTree);
+
+        framePrincipal.setSize(600,600);
         framePrincipal.setVisible(true);
-        framePrincipal.setSize(640, 480);
     }
 }
