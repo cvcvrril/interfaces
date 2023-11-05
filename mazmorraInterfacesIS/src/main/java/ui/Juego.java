@@ -1,6 +1,10 @@
 package ui;
 
+import dao.DAOmazmorra;
+import org.w3c.dom.Document;
+
 import javax.swing.*;
+
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import java.awt.*;
@@ -38,7 +42,13 @@ public class Juego {
         framePrincipal.add(treeView,BorderLayout.WEST);
         framePrincipal.add(mainView);
         treeView.add(fileTree);
-        pruebaTree();
+        DAOmazmorra dao = new DAOmazmorra();
+        Document doc = dao.parseXML("data/mazmorra.xml");
+ //       pruebaTree();
+        if (doc != null) {
+            treeModel = new DefaultTreeModel(dao.buildTree(doc));
+            fileTree.setModel(treeModel);
+        }
         setMenuOptions();
         setButtonPane();
         framePrincipal.setJMenuBar(menuBar);
