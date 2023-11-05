@@ -5,14 +5,11 @@ import org.w3c.dom.Document;
 
 import javax.swing.*;
 
-import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import java.awt.*;
-import java.io.File;
 
 public class Juego {
     JFrame framePrincipal = new JFrame("Prueba");
-    JButton botonPrueba = new JButton("Prueba");
     JMenuBar menuBar=new JMenuBar();
     JMenu menu=new JMenu("Opciones");
     JMenuItem loadMI=new JMenuItem("Load file");
@@ -21,10 +18,6 @@ public class Juego {
     JPanel mainView=new JPanel(new BorderLayout());
     JPanel buttonView=new JPanel(new BorderLayout());
     JPanel textView=new JPanel(new BorderLayout());
-    File fileXML = new File("data/mazmorra.xml");
-    DefaultMutableTreeNode dungeon = new DefaultMutableTreeNode("Dungeon");
-    DefaultMutableTreeNode roomR0 = new DefaultMutableTreeNode("room R0");
-    DefaultMutableTreeNode roomR1 = new DefaultMutableTreeNode("room R1");
     private DefaultTreeModel treeModel;
     JTree fileTree = new JTree();
     JTextArea textArea = new JTextArea();
@@ -66,10 +59,5 @@ public class Juego {
         menu.add(loadMI);
         menu.add(startMI);
         menuBar.add(menu);
-    }
-    public void pruebaTree(){
-        dungeon.add(roomR0);
-        dungeon.add(roomR1);
-        fileTree = new JTree(dungeon);
     }
 }
