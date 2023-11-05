@@ -28,30 +28,11 @@
         <door name="Sur" dest="R10" />
         <door name="Oeste" dest="R01" />
         <door name="Este" dest="R21" />
-        <description>Estas en el centro de la mazmorra</description>
+        <description>Habitación 1,1</description>
     </room>
     <room id="R12">
         <door name="Sur" dest="R11" />
-        <door name="Oeste" dest="R02" />
-        <door name="Este" dest="R22" />
         <description>Habitación 1,2</description>
     </room>
 
-    <!-- Fila 3 -->
-    <room id="R20">
-        <door name="Norte" dest="R21" />
-        <door name="Oeste" dest="R10" />
-        <description>Habitación 2,0</description>
-    </room>
-    <room id="R21">
-        <door name="Norte" dest="R22" />
-        <door name="Sur" dest="R20" />
-        <door name="Oeste" dest="R11" />
-        <description>Habitación 2,1</description>
-    </room>
-    <room id="R22">
-        <door name="Sur" dest="R21" />
-        <door name="Oeste" dest="R12" />
-        <description>Habitación 2,2</description>
-    </room>
 </Dungeon>

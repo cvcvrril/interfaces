@@ -9,4 +9,9 @@ public class Constantes {
     public static final String DEST = "dest";
     public static final String FLECHITA = " -> ";
     public static final String DESCRIPTION = "description";
+    public static final String INICIO = "R00";
+    public static final String NORTE = "Norte";
+    public static final String SUR = "Sur";
+    public static final String ESTE = "Este";
+    public static final String OESTE = "Oeste";
 }
