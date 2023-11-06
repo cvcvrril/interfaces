@@ -11,6 +11,8 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.filechooser.FileSystemView;
 import javax.swing.tree.DefaultTreeModel;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -68,11 +70,11 @@ public class Juego {
             textAreaButtons.setText(currentRoom.getDescription());
             enableDirectionButtons(currentRoom);
         });
+        listenDirectionButtons();
     }
 
     private static Room getRoom(String roomId, String description, Element roomElement) {
         Room room = new Room(roomId, description);
-
         NodeList doorNodes = roomElement.getElementsByTagName(Constantes.DOOR);
         for (int j = 0; j < doorNodes.getLength(); j++) {
             Element doorElement = (Element) doorNodes.item(j);
@@ -87,12 +89,13 @@ public class Juego {
         buttonSouth.setEnabled(room.getDoorDestination(Constantes.SUR) != null);
         buttonEast.setEnabled(room.getDoorDestination(Constantes.ESTE) != null);
         buttonWest.setEnabled(room.getDoorDestination(Constantes.OESTE) != null);
+    }
+    private void listenDirectionButtons(){
         buttonNorth.addActionListener(e -> move(Constantes.NORTE));
         buttonSouth.addActionListener(e -> move(Constantes.SUR));
         buttonEast.addActionListener(e -> move(Constantes.ESTE));
         buttonWest.addActionListener(e -> move(Constantes.OESTE));
     }
-
     public void move(String direction) {
         String destinationRoomId = currentRoom.getDoorDestination(direction);
         if (destinationRoomId != null) {

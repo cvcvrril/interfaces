@@ -1,57 +1,57 @@
 <Dungeon>
-    <room id="R00">
-        <door name="Norte" dest="R01" />
-        <door name="Este" dest="R10" />
-        <description>Habitación 0,0</description>
+    <room id="R7">
+        <door name="Norte" dest="R4" />
+        <door name="Este" dest="R8" />
+        <description>Habitación 7</description>
     </room>
-    <room id="R01">
-        <door name="Norte" dest="R02" />
-        <door name="Sur" dest="R00" />
-        <door name="Este" dest="R11" />
-        <description>Habitación 0,1</description>
+    <room id="R4">
+        <door name="Norte" dest="R1" />
+        <door name="Sur" dest="R7" />
+        <door name="Este" dest="R5" />
+        <description>Habitación 4</description>
     </room>
-    <room id="R02">
-        <door name="Sur" dest="R01" />
-        <door name="Este" dest="R12" />
-        <description>Habitación 0,2</description>
+    <room id="R1">
+        <door name="Sur" dest="R4" />
+        <door name="Este" dest="R2" />
+        <description>Habitación 1</description>
     </room>
 
     <!-- Fila 2 -->
-    <room id="R10">
-        <door name="Norte" dest="R11" />
-        <door name="Oeste" dest="R00" />
-        <door name="Este" dest="R20" />
-        <description>Habitación 1,0</description>
+    <room id="R8">
+        <door name="Norte" dest="R5" />
+        <door name="Oeste" dest="R7" />
+        <door name="Este" dest="R9" />
+        <description>Habitación 8</description>
     </room>
-    <room id="R11">
-        <door name="Norte" dest="R12" />
-        <door name="Sur" dest="R10" />
-        <door name="Oeste" dest="R01" />
-        <door name="Este" dest="R21" />
-        <description>Estas en el centro de la mazmorra</description>
+    <room id="R5">
+        <door name="Norte" dest="R2" />
+        <door name="Sur" dest="R8" />
+        <door name="Oeste" dest="R4" />
+        <door name="Este" dest="R6" />
+        <description>Estas en el centro de la mazmorra (Habitacion 5)</description>
     </room>
-    <room id="R12">
-        <door name="Sur" dest="R11" />
-        <door name="Oeste" dest="R02" />
-        <door name="Este" dest="R22" />
-        <description>Habitación 1,2</description>
+    <room id="R2">
+        <door name="Sur" dest="R5" />
+        <door name="Oeste" dest="R1" />
+        <door name="Este" dest="R3" />
+        <description>Habitación 2</description>
     </room>
 
     <!-- Fila 3 -->
-    <room id="R20">
-        <door name="Norte" dest="R21" />
-        <door name="Oeste" dest="R10" />
-        <description>Habitación 2,0</description>
+    <room id="R9">
+        <door name="Norte" dest="R6" />
+        <door name="Oeste" dest="R8" />
+        <description>Habitación 9</description>
     </room>
-    <room id="R21">
-        <door name="Norte" dest="R22" />
-        <door name="Sur" dest="R20" />
-        <door name="Oeste" dest="R11" />
-        <description>Habitación 2,1</description>
+    <room id="R6">
+        <door name="Norte" dest="R3" />
+        <door name="Sur" dest="R9" />
+        <door name="Oeste" dest="R5" />
+        <description>Habitación 6</description>
     </room>
-    <room id="R22">
-        <door name="Sur" dest="R21" />
-        <door name="Oeste" dest="R12" />
-        <description>Habitación 2,2</description>
+    <room id="R3">
+        <door name="Sur" dest="R6" />
+        <door name="Oeste" dest="R2" />
+        <description>Habitación 3</description>
     </room>
 </Dungeon>
