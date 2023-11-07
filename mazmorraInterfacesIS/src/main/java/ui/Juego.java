@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Juego {
-    private final JFrame framePrincipal = new JFrame("Prueba");
+    private final JFrame framePrincipal = new JFrame("Mazmorra");
     private final JMenuBar menuBar = new JMenuBar();
     private final JMenu menu = new JMenu("Opciones");
     private final JMenuItem loadMI = new JMenuItem("Load file");
@@ -23,11 +23,10 @@ public class Juego {
     private final JPanel treeView = new JPanel();
     private final JPanel mainView = new JPanel(new BorderLayout());
     private final JPanel buttonView = new JPanel(new BorderLayout());
-    private final JPanel textView = new JPanel(new BorderLayout());
     private DefaultTreeModel treeModel;
     private final JTree fileTree = new JTree();
     private final JTextArea textArea = new JTextArea();
-    private final JTextArea textAreaButtons = new JTextArea(10, 10);
+    private final JTextArea textAreaButtons = new JTextArea(10, 20);
     private final JButton buttonNorth = new JButton("North");
     private final JButton buttonWest = new JButton("West");
     private final JButton buttonSouth = new JButton("South");
@@ -40,6 +39,7 @@ public class Juego {
 
     public void JuegoMazmorra() {
         prepararPantalla();
+        treeView.setVisible(false);
         loadMI.addActionListener(e -> {
             JFileChooser fileChooser = new JFileChooser("data", FileSystemView.getFileSystemView());
             FileNameExtensionFilter xmlfilter = new FileNameExtensionFilter(
@@ -52,6 +52,7 @@ public class Juego {
                 treeModel = new DefaultTreeModel(dao.buildTree(doc));
                 fileTree.setModel(treeModel);
             }
+            treeView.setVisible(true);
         });
         startMI.addActionListener(e -> {
             root = doc.getDocumentElement();
@@ -107,7 +108,12 @@ public class Juego {
     public void prepararPantalla() {
         framePrincipal.setSize(400, 500);
         textArea.setEditable(false);
-        textView.add(textArea);
+        textAreaButtons.setEditable(false);
+        JScrollPane textViewButtons = new JScrollPane (textAreaButtons);
+        textViewButtons.setVerticalScrollBarPolicy (ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS );
+        buttonView.add(textViewButtons, BorderLayout.CENTER);
+        JScrollPane textView = new JScrollPane (textArea);
+        textView.setVerticalScrollBarPolicy (ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS );
         mainView.add(textView);
         mainView.add(buttonView, BorderLayout.NORTH);
         framePrincipal.add(treeView, BorderLayout.WEST);
@@ -122,7 +128,6 @@ public class Juego {
     public void setButtonPane() {
         buttonView.add(buttonNorth, BorderLayout.NORTH);
         buttonView.add(buttonSouth, BorderLayout.SOUTH);
-        buttonView.add(textAreaButtons, BorderLayout.CENTER);
         textAreaButtons.setEditable(true);
         buttonView.add(buttonEast, BorderLayout.EAST);
         buttonView.add(buttonWest, BorderLayout.WEST);
