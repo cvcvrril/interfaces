@@ -14,4 +14,15 @@ public class Constantes {
     public static final String SUR = "Sur";
     public static final String ESTE = "Este";
     public static final String OESTE = "Oeste";
+    public static final String NORTH = "North";
+    public static final String WEST = "West";
+    public static final String SOUTH = "South";
+    public static final String EAST = "East";
+    public static final String DATA = "data";
+    public static final String XML = "xml";
+    public static final String XML_FILES_XML = "xml files (*.xml)";
+    public static final String MAZMORRA = "Mazmorra";
+    public static final String OPCIONES = "Opciones";
+    public static final String LOAD_FILE = "Load file";
+    public static final String START = "Start";
 }

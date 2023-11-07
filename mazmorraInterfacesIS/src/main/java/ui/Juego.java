@@ -15,11 +15,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Juego {
-    private final JFrame framePrincipal = new JFrame("Mazmorra");
+    private final JFrame framePrincipal = new JFrame(Constantes.MAZMORRA);
     private final JMenuBar menuBar = new JMenuBar();
-    private final JMenu menu = new JMenu("Opciones");
-    private final JMenuItem loadMI = new JMenuItem("Load file");
-    private final JMenuItem startMI = new JMenuItem("Start");
+    private final JMenu menu = new JMenu(Constantes.OPCIONES);
+    private final JMenuItem loadMI = new JMenuItem(Constantes.LOAD_FILE);
+    private final JMenuItem startMI = new JMenuItem(Constantes.START);
     private final JPanel treeView = new JPanel();
     private final JPanel mainView = new JPanel(new BorderLayout());
     private final JPanel buttonView = new JPanel(new BorderLayout());
@@ -27,10 +27,10 @@ public class Juego {
     private final JTree fileTree = new JTree();
     private final JTextArea textArea = new JTextArea();
     private final JTextArea textAreaButtons = new JTextArea(10, 20);
-    private final JButton buttonNorth = new JButton("North");
-    private final JButton buttonWest = new JButton("West");
-    private final JButton buttonSouth = new JButton("South");
-    private final JButton buttonEast = new JButton("East");
+    private final JButton buttonNorth = new JButton(Constantes.NORTH);
+    private final JButton buttonWest = new JButton(Constantes.WEST);
+    private final JButton buttonSouth = new JButton(Constantes.SOUTH);
+    private final JButton buttonEast = new JButton(Constantes.EAST);
     Map<String, Room> rooms = new HashMap<>();
     private final DAOmazmorra dao = new DAOmazmorra();
     private Document doc;
@@ -41,9 +41,9 @@ public class Juego {
         prepararPantalla();
         treeView.setVisible(false);
         loadMI.addActionListener(e -> {
-            JFileChooser fileChooser = new JFileChooser("data", FileSystemView.getFileSystemView());
+            JFileChooser fileChooser = new JFileChooser(Constantes.DATA, FileSystemView.getFileSystemView());
             FileNameExtensionFilter xmlfilter = new FileNameExtensionFilter(
-                    "xml files (*.xml)", "xml");
+                    Constantes.XML_FILES_XML, Constantes.XML);
             if (fileChooser.showOpenDialog(mainView) == JFileChooser.APPROVE_OPTION) {
                 fileChooser.setFileFilter(xmlfilter);
             }
