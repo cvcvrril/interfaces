@@ -11,8 +11,6 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.filechooser.FileSystemView;
 import javax.swing.tree.DefaultTreeModel;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -102,6 +100,7 @@ public class Juego {
             currentRoom = rooms.get(destinationRoomId);
             textAreaButtons.setText(currentRoom.getDescription());
             enableDirectionButtons(currentRoom);
+            movimientosUsuario();
         }
     }
 
@@ -124,7 +123,7 @@ public class Juego {
         buttonView.add(buttonNorth, BorderLayout.NORTH);
         buttonView.add(buttonSouth, BorderLayout.SOUTH);
         buttonView.add(textAreaButtons, BorderLayout.CENTER);
-        textAreaButtons.setEditable(false);
+        textAreaButtons.setEditable(true);
         buttonView.add(buttonEast, BorderLayout.EAST);
         buttonView.add(buttonWest, BorderLayout.WEST);
     }
@@ -133,5 +132,9 @@ public class Juego {
         menu.add(loadMI);
         menu.add(startMI);
         menuBar.add(menu);
+    }
+
+    public void movimientosUsuario(){
+        textArea.append(currentRoom.getDescription() + System.lineSeparator());
     }
 }
