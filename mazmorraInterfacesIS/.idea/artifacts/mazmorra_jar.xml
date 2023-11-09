@@ -1,13 +1,13 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="mazmorraInterfacesIS:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/mazmorraInterfacesIS_jar</output-path>
+  <artifact type="jar" name="mazmorra:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/mazmorra_jar</output-path>
     <root id="archive" name="mazmorraInterfacesIS.jar">
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
       </element>
       <element id="module-output" name="mazmorraInterfacesIS" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.28/lombok-1.18.28.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.19.0/log4j-api-2.19.0.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
