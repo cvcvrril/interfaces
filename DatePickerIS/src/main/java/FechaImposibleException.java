@@ -1,5 +1,6 @@
-public class FechaImposibleException extends Exception{
-    public FechaImposibleException(String s){
+public class FechaImposibleException extends FechaException{
+
+    public FechaImposibleException(String s) {
         super(s);
     }
 }
