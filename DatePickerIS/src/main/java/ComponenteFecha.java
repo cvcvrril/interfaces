@@ -8,6 +8,7 @@ public class ComponenteFecha implements ComponenteFechaInt {
     private JComboBox<String> monthComboBox;
     private JTextField yearTextField;
     private Border border;
+    private boolean bisiesto;
 
     public ComponenteFecha(JPanel jPanel) {
         border = BorderFactory.createLineBorder(Color.BLACK, 1);
@@ -29,7 +30,7 @@ public class ComponenteFecha implements ComponenteFechaInt {
         monthComboBox.addItem("Diciembre");
     }
 
-    private void setDayCombo(String month, int anyo) {
+    private void setDayCombo(String month, String anyo) {
         if (month.equalsIgnoreCase("enero") || month.equalsIgnoreCase("marzo") || month.equalsIgnoreCase("mayo") ||
                 month.equalsIgnoreCase("julio") || month.equalsIgnoreCase("agosto") || month.equalsIgnoreCase("octubre") || month.equalsIgnoreCase("diciembre")) {
             for (int i = 1; i < 31; i++) {
@@ -41,21 +42,37 @@ public class ComponenteFecha implements ComponenteFechaInt {
                 dayComboBox.addItem(i);
             }
         } else if (month.equalsIgnoreCase("febrero")) {
-            //InésAquí!!!
-            for (int i = 1; i < 28; i++) {
-                dayComboBox.addItem(i);
+            if (bisiesto) {
+                for (int i = 1; i < 28; i++) {
+                    dayComboBox.addItem(i);
+                }
+            }else {
+                for (int i = 1; i < 27; i++) {
+                    dayComboBox.addItem(i);
+                }
             }
+        }
+    }
+
+    private void setYearTextField(String anyoParam) {
+        int anyo = Integer.parseInt(anyoParam);
+        if ((anyo % 4 == 0) && (anyo % 100 == 0) || (anyo % 400 == 0)) {
+            bisiesto = true;
+        } else {
+            bisiesto = false;
         }
     }
 
     @Override
     public LocalDate getFecha() throws FechaException {
+
         return null;
     }
 
     @Override
-    public void setFecha(int anyo, int mes, int dia) {
-
+    public void setFecha(String anyo, String mes, int dia) {
+        setDayCombo(mes,anyo);
+        setYearTextField(anyo);
     }
 
 }
