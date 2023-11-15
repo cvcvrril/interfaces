@@ -17,7 +17,7 @@ public class ComponenteFechaClase extends JPanel implements ComponenteFecha{
         setYearTextField();
     }
     private void setMonthCombo() {
-        for (int i = 0; i < 12; i++) {
+        for (int i = 1; i < 12; i++) {
             monthComboBox.addItem(i);
         }
     }
