@@ -7,8 +7,6 @@ public class ComponenteFechaClase extends JPanel implements ComponenteFecha{
     private JComboBox<Integer> dayComboBox = new JComboBox<>();
     private JComboBox<Integer> monthComboBox =new JComboBox<>();
     private JTextField yearTextField=new JTextField(4);
-    private Border border;
-    private boolean bisiesto;
 
     public ComponenteFechaClase() {
         add(dayComboBox);
@@ -41,6 +39,5 @@ public class ComponenteFechaClase extends JPanel implements ComponenteFecha{
 
     @Override
     public void setDate(int day, int month, int year) {
-
     }
 }
