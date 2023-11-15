@@ -45,7 +45,7 @@ public class ComponenteFechaClase extends JPanel implements ComponenteFecha{
             //Imposible
 
             if (g) {
-                
+
             }else {
                 //Incorrecto
             }
