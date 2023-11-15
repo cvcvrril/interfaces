@@ -33,8 +33,36 @@ public class ComponenteFechaClase extends JPanel implements ComponenteFecha{
     }
 
     @Override
-    public LocalDate getDate() {
-        return null;
+    public LocalDate getDate() throws FechaException {
+
+        //Incompleto
+
+        if((getDayComboBox() == null) || (getMonthComboBox() == null) || (getYearTextField() == null)){
+            throw new FechaIncompletaException("Ha introducido una fecha incompleta");
+
+        }else {
+
+            //Imposible
+
+            if (g) {
+                
+            }else {
+                //Incorrecto
+            }
+
+        }
+    }
+
+    public JComboBox<Integer> getDayComboBox() {
+        return dayComboBox;
+    }
+
+    public JComboBox<Integer> getMonthComboBox() {
+        return monthComboBox;
+    }
+
+    public JTextField getYearTextField() {
+        return yearTextField;
     }
 
     @Override
