@@ -32,7 +32,8 @@ public class ComponenteFecha implements ComponenteFechaInt {
 
     private void setDayCombo(String month, String anyo) {
         if (month.equalsIgnoreCase("enero") || month.equalsIgnoreCase("marzo") || month.equalsIgnoreCase("mayo") ||
-                month.equalsIgnoreCase("julio") || month.equalsIgnoreCase("agosto") || month.equalsIgnoreCase("octubre") || month.equalsIgnoreCase("diciembre")) {
+                month.equalsIgnoreCase("julio") || month.equalsIgnoreCase("agosto") || month.equalsIgnoreCase("octubre") ||
+                month.equalsIgnoreCase("diciembre")) {
             for (int i = 1; i < 31; i++) {
                 dayComboBox.addItem(i);
             }
@@ -46,7 +47,7 @@ public class ComponenteFecha implements ComponenteFechaInt {
                 for (int i = 1; i < 28; i++) {
                     dayComboBox.addItem(i);
                 }
-            }else {
+            } else {
                 for (int i = 1; i < 27; i++) {
                     dayComboBox.addItem(i);
                 }
@@ -71,7 +72,7 @@ public class ComponenteFecha implements ComponenteFechaInt {
 
     @Override
     public void setFecha(String anyo, String mes, int dia) {
-        setDayCombo(mes,anyo);
+        setDayCombo(mes, anyo);
         setYearTextField(anyo);
     }
 
