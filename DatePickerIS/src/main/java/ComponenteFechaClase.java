@@ -39,29 +39,34 @@ public class ComponenteFechaClase extends JPanel implements ComponenteFecha {
     @Override
     public LocalDate getDate() throws FechaException {
 
-            //Incompleto
+        int day = (int) getDayComboBox().getSelectedItem();
+        int month = (int) getMonthComboBox().getSelectedItem();
+        int year;
+
+        //Incompleto
 
         if (getDayComboBox().getSelectedItem().equals(0) || getMonthComboBox().getSelectedItem().equals(0) || getYearTextField().getText().isEmpty()) {
             throw new FechaIncompletaException("Ha introducido una fecha incompleta");
         }
 
-        int day = (int) getDayComboBox().getSelectedItem();
-        int month = (int) getMonthComboBox().getSelectedItem();
-        int year;
+        year = Integer.parseInt(getYearTextField().getText());
 
-        try {
-            year = Integer.parseInt(getYearTextField().getText());
-        } catch (NumberFormatException e) {
-            throw new FechaIncorrectaException("El año introducido no es válido");
-        }
-            //Imposible
-        if (month == 2 && day > 29 && !esBisiesto(year)) {
+        //Imposible
+        if (month == 2 && day == 29 && !esBisiesto(year)) {
             throw new FechaImposibleException("Ha introducido un 29 de febrero en un año no bisiesto");
         }
 
-            //Incorrecto
+        if (year < 0){
+            throw new FechaImposibleException("El año introducido no es válido");
+        }
+
+        //Incorrecto
         if (month < 1 || month > 12 || day < 1 || day > 31) {
             throw new FechaIncorrectaException("Ha introducido una fecha incorrecta");
+        }
+
+        if ((month == 4 || month==2 || month == 6 || month == 9 || month == 11) && day == 31) {
+            throw new FechaIncorrectaException("El mes " + month + " no puede tener 31 días");
         }
 
         return LocalDate.of(year, month, day);
