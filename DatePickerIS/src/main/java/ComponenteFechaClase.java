@@ -1,6 +1,9 @@
+import exception.FechaException;
+import exception.FechaImposibleException;
+import exception.FechaIncompletaException;
+import exception.FechaIncorrectaException;
+
 import javax.swing.*;
-import javax.swing.border.Border;
-import java.awt.*;
 import java.time.LocalDate;
 
 public class ComponenteFechaClase extends JPanel implements ComponenteFecha {
