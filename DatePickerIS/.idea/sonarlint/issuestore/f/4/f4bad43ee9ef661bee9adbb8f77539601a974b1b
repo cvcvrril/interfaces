@@ -1,5 +1,11 @@
 
+k
+java:S11921"IDefine a constant instead of duplicating this literal ", AÃ±o: " 5 times.(ùÜÔ‚øÿÿÿÿ8üëÚÎ½1
+j
+java:S11921"HDefine a constant instead of duplicating this literal ", Mes: " 5 times.(ùÜÔ‚øÿÿÿÿ8üëÚÎ½1
+i
+java:S11921"GDefine a constant instead of duplicating this literal "DÃ­a: " 5 times.(ùÜÔ‚øÿÿÿÿ8ûëÚÎ½1
 7
-java:S1220""Move this file to a named package.8ÜÃÉ½1
+java:S1220""Move this file to a named package.8ŒÓÎ½1
 
-java:S1186\"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ò›‰…8¨öÉ½1
+java:S1186\"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ò›‰…8¯ÓÎ½1

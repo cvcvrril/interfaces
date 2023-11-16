@@ -46,27 +46,27 @@ public class ComponenteFechaClase extends JPanel implements ComponenteFecha {
         //Incompleto
 
         if (getDayComboBox().getSelectedItem().equals(0) || getMonthComboBox().getSelectedItem().equals(0) || getYearTextField().getText().isEmpty()) {
-            throw new FechaIncompletaException("Ha introducido una fecha incompleta");
+            throw new FechaIncompletaException("Ha introducido una fecha incompleta [ " + "Día: "+getDayComboBox().getSelectedItem().toString() +", Mes: "+ getMonthComboBox().getSelectedItem().toString()+ ", Año: " + yearTextField.getText() + " ]");
         }
 
         year = Integer.parseInt(getYearTextField().getText());
 
         //Imposible
         if (month == 2 && day == 29 && !esBisiesto(year)) {
-            throw new FechaImposibleException("Ha introducido un 29 de febrero en un año no bisiesto");
+            throw new FechaImposibleException("Ha introducido un 29 de febrero en un año no bisiesto [ " + "Día: "+getDayComboBox().getSelectedItem().toString() +", Mes: "+ getMonthComboBox().getSelectedItem().toString()+ ", Año: " + yearTextField.getText() + " ]");
         }
 
         if (year < 0){
-            throw new FechaImposibleException("El año introducido no es válido");
+            throw new FechaImposibleException("El año introducido no es válido [ " + "Día: "+getDayComboBox().getSelectedItem().toString() +", Mes: "+ getMonthComboBox().getSelectedItem().toString()+ ", Año: " + yearTextField.getText() + " ]");
         }
 
         //Incorrecto
         if (month < 1 || month > 12 || day < 1 || day > 31) {
-            throw new FechaIncorrectaException("Ha introducido una fecha incorrecta");
+            throw new FechaIncorrectaException("Ha introducido una fecha incorrecta [ " + "Día: "+getDayComboBox().getSelectedItem().toString() +", Mes: "+ getMonthComboBox().getSelectedItem().toString()+ ", Año: " + yearTextField.getText() + " ]");
         }
 
         if ((month == 4 || month==2 || month == 6 || month == 9 || month == 11) && day == 31) {
-            throw new FechaIncorrectaException("El mes " + month + " no puede tener 31 días");
+            throw new FechaIncorrectaException("El mes " + month + " no puede tener 31 días [ " + "Día: "+getDayComboBox().getSelectedItem().toString() +", Mes: "+ getMonthComboBox().getSelectedItem().toString()+ ", Año: " + yearTextField.getText() + " ]");
         }
 
         return LocalDate.of(year, month, day);

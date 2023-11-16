@@ -53,7 +53,7 @@ public class Demo implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         try {
             comprobacion();
-        } catch (FechaException ex) {
+        } catch (Exception ex) {
             textArea.setText(ex.getMessage());
         }
     }
