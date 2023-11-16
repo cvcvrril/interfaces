@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 import java.time.temporal.ChronoUnit;
 
 public class Demo implements ActionListener {
-    private final JFrame framePrincipal = new JFrame();
+    private final JFrame framePrincipal = new JFrame("demo");
     private final JPanel panel = new JPanel();
     private final JLabel fechaInicioLabel = new JLabel("Fecha inicio:");
     private final JLabel fechaFinLabel = new JLabel("Fecha fin:");
@@ -44,6 +44,8 @@ public class Demo implements ActionListener {
             textArea.setText("Hay " + fechaInicio.getDate().until(fechaFin.getDate(), ChronoUnit.DAYS) + " dias entre las fechas");
         } else if (fechaInicio.getDate().isAfter(fechaFin.getDate())) {
             textArea.setText("La fecha de inicio es posterior a la de fin");
+        } else if (fechaInicio.getDate().isEqual(fechaFin.getDate())){
+            textArea.setText("Las fechas son la misma");
         }
     }
 

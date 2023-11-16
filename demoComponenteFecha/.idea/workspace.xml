@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="demoFecha:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="534ef0da-c8c8-41ae-b4c1-f1c86b2ee766" name="Changes" comment="16/11/2023 10:49 Sonia">
-      <change beforePath="$PROJECT_DIR$/../DatePickerIS/.idea/sonarlint/issuestore/2/f/2fc0f14362304080fe817330256efd09928431b5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatePickerIS/.idea/sonarlint/issuestore/4/3/4369abc3851bcf943a43ebf8f8f9298b58b73065" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatePickerIS/.idea/sonarlint/issuestore/8/d/8d0d97d1896d0eed312b41b5923304653dd5cae4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatePickerIS/.idea/sonarlint/issuestore/d/9/d93eedf08820150ec7e1e8b18270daa34f55fc8f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatePickerIS/.idea/sonarlint/issuestore/f/4/f4bad43ee9ef661bee9adbb8f77539601a974b1b" beforeDir="false" afterPath="$PROJECT_DIR$/../DatePickerIS/.idea/sonarlint/issuestore/f/4/f4bad43ee9ef661bee9adbb8f77539601a974b1b" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatePickerIS/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../DatePickerIS/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatePickerIS/.idea/sonarlint/securityhotspotstore/2/f/2fc0f14362304080fe817330256efd09928431b5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatePickerIS/.idea/sonarlint/securityhotspotstore/4/3/4369abc3851bcf943a43ebf8f8f9298b58b73065" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatePickerIS/.idea/sonarlint/securityhotspotstore/8/d/8d0d97d1896d0eed312b41b5923304653dd5cae4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatePickerIS/.idea/sonarlint/securityhotspotstore/d/9/d93eedf08820150ec7e1e8b18270daa34f55fc8f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatePickerIS/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../DatePickerIS/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatePickerIS/out/artifacts/DatePickerIS_jar/DatePickerIS.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../DatePickerIS/out/artifacts/DatePickerIS_jar/DatePickerIS.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DatePickerIS/src/main/java/ComponenteFechaClase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DatePickerIS/src/main/java/ComponenteFechaClase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/demoFecha_jar/demoFecha.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DatePickerIS/out/artifacts/DatePickerIS_jar/DatePickerIS.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../DatePickerIS/out/artifacts/DatePickerIS_jar/componenteFecha.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/demoComponenteFecha_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/demoFecha_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mazmorraInterfacesIS/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mazmorraInterfacesIS/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +44,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/madrid/Documents/GH/interfaces/DatePickerIS/out/artifacts/DatePickerIS_jar/DatePickerIS.jar",
+    "last_opened_file_path": "C:/Users/madrid/Documents/GH/interfaces/DatePickerIS/out/artifacts/DatePickerIS_jar/componenteFecha.jar",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.21149425",
     "vue.rearranger.settings.migration": "true"
   }
@@ -84,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1700124522913</updated>
       <workItem from="1700124523906" duration="5987000" />
-      <workItem from="1700153277925" duration="4269000" />
+      <workItem from="1700153277925" duration="6652000" />
     </task>
     <task id="LOCAL-00001" summary="16/11/2023 10:49 Sonia">
       <option name="closed" value="true" />
@@ -103,25 +100,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="16/11/2023 10:49 Sonia" />
     <option name="LAST_COMMIT_MESSAGE" value="16/11/2023 10:49 Sonia" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Demo.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>jar://$PROJECT_DIR$/../DatePickerIS/out/artifacts/DatePickerIS_jar/DatePickerIS.jar!/ComponenteFechaClase.class</url>
-          <line>69</line>
-          <properties class="ComponenteFechaClase" method="esBisiesto">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
