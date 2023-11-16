@@ -1,3 +1,5 @@
+import exception.FechaException;
+
 import java.time.LocalDate;
 
 public interface ComponenteFecha {

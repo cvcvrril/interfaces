@@ -1,3 +1,5 @@
+package exception;
+
 public class FechaImposibleException extends FechaException{
 
     public FechaImposibleException(String s) {
