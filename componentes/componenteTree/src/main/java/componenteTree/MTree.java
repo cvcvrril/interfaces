@@ -6,6 +6,6 @@ import javax.swing.*;
 
 public interface MTree {
 
-    JScrollPane createJTree(Dungeon dungeon);
+    JTree createJTree(Dungeon dungeon);
 
 }
