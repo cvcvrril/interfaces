@@ -2,7 +2,7 @@ package componenteTree.model;
 
 public class Door {
 
-    private String location;
+    private String name;
     private String dest;
 
     public void setDest(String dest) {
@@ -10,11 +10,11 @@ public class Door {
     }
 
     public void setName(String location) {
-        this.location = location;
+        this.name = location;
     }
 
     public String getName() {
-        return location;
+        return name;
     }
 
     public String getDest() {
