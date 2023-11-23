@@ -12,7 +12,7 @@ import java.util.List;
 public class mTreeImpl extends JTree implements MTree {
 
     @Override
-    public JTree createJTree(Dungeon dungeon) {
+    public void createJTree(Dungeon dungeon) {
         DefaultMutableTreeNode rootNode = new DefaultMutableTreeNode("Mazmorra");
         List<Room> rooms = dungeon.getRooms();
         for (Room room : rooms) {
@@ -28,6 +28,6 @@ public class mTreeImpl extends JTree implements MTree {
         }
 
         DefaultTreeModel treeModel = new DefaultTreeModel(rootNode);
-        return new JTree(treeModel);
+        this.add(new JTree(treeModel));
     }
 }

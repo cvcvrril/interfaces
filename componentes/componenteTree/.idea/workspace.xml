@@ -5,28 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d552db54-226d-4355-a999-a057f5639487" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../componenteLoad/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteLoad/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteLoad/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteLoad/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteLoad/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteLoad/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteLoad/src/main/java/componenteLoad/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteLog/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteLog/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteLog/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteLog/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteLog/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteLog/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteLog/src/main/java/componenteLog/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteMov/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteMov/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteMov/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteMov/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteMov/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteMov/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componenteMov/src/main/java/componenteMov/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/componenteTree/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/componenteTree/MTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/componenteTree/MTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/componenteTree/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/componenteTree/mTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/componenteTree/mTreeImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +19,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -59,11 +43,39 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="componenteTree.Main" />
+      <module name="componenteTree" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="componenteTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -72,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700727142954</updated>
-      <workItem from="1700727144068" duration="305000" />
+      <workItem from="1700727144068" duration="5239000" />
     </task>
     <servers />
   </component>
