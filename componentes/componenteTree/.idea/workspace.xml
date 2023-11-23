@@ -5,26 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d552db54-226d-4355-a999-a057f5639487" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../componentesMazmorraIS/src/main/java/componentesMazmorra/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../componentesMazmorraIS/src/main/java/componentesMazmorra/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteLoad/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteLoad/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteLoad/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteLoad/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteLoad/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteLoad/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteLoad/src/main/java/componenteLoad/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteLog/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteLog/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteLog/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteLog/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteLog/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteLog/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteLog/src/main/java/componenteLog/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteMov/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteMov/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteMov/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteMov/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteMov/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteMov/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../componenteMov/src/main/java/componenteMov/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/componenteTree/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 8
 }]]></component>
   <component name="ProjectId" id="2YZJPAycccdeoVWrr6BajCWWi72" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -36,8 +72,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700727142954</updated>
-      <workItem from="1700727144068" duration="2000" />
+      <workItem from="1700727144068" duration="305000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
