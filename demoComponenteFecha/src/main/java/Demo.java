@@ -2,10 +2,12 @@ import exception.FechaException;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-public class Demo {
+public class Demo implements ActionListener {
     private final JFrame framePrincipal = new JFrame();
     private final JPanel panel = new JPanel();
     private final JLabel fechaInicioLabel = new JLabel("Fecha inicio:");
@@ -15,23 +17,8 @@ public class Demo {
     private final ComponenteFecha fechaInicio = new ComponenteFechaClase();
     private final ComponenteFecha fechaFin = new ComponenteFechaClase();
 
-    public Demo() {
+    public Demo(){
         prepararPantalla();
-        comprobar.addActionListener(e -> {
-            try {
-                if (fechaValida(fechaInicio.getDate()) && fechaValida(fechaFin.getDate())) {
-                    if (fechaInicio.getDate().isBefore(fechaFin.getDate())) {
-                        textArea.setText("Hay " + fechaInicio.getDate().until(fechaFin.getDate(), ChronoUnit.DAYS) + " dias entre las fechas");
-                    } else if (fechaInicio.getDate().isAfter(fechaFin.getDate())) {
-                        textArea.setText("La fecha de inicio es posterior a la de fin");
-                    }
-                } else {
-
-                }
-            } catch (FechaException ex) {
-
-            }
-        });
     }
 
     private void prepararPantalla() {
@@ -52,7 +39,16 @@ public class Demo {
         framePrincipal.setVisible(true);
     }
 
-    private boolean fechaValida(LocalDate localDate) {
-        return true;
+@Override
+    public void actionPerformed(ActionEvent e) {
+    try {
+        if (fechaInicio.getDate().isBefore(fechaFin.getDate())) {
+            textArea.setText("Hay " + fechaInicio.getDate().until(fechaFin.getDate(), ChronoUnit.DAYS) + " dias entre las fechas");
+        } else if (fechaInicio.getDate().isAfter(fechaFin.getDate())) {
+            textArea.setText("La fecha de inicio es posterior a la de fin");
+        }
+    } catch (FechaException ex) {
+        throw new RuntimeException(ex);
     }
+}
 }
