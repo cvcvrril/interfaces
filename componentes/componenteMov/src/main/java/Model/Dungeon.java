@@ -1,4 +1,4 @@
-package componenteMov.domain;
+package Model;
 
 import java.util.List;
 

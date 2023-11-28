@@ -1,12 +1,12 @@
 package componenteMov.dao;
 
-import componenteMov.domain.Door;
-import componenteMov.domain.Room;
+import Model.Door;
+import Model.Room;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class mMoveListener implements mMoveListenerInterface {
+public class MMoveListener implements MMoveListenerInterface {
     private List<String> locations= new ArrayList<>();
     @Override
     public void roomUpdated(Room room) {

@@ -1,10 +1,10 @@
 package componenteMov.dao;
 
-import componenteMov.domain.Room;
+import Model.Room;
 
 import java.util.List;
 
-public interface mMoveInterface {
+public interface MMoveInterface {
     void loadRoom(Room room);
     void setRooms(List<Room> room);
 }

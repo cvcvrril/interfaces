@@ -1,4 +1,4 @@
-package componentesMazmorra.model;
+package Model;
 
 public class Door {
 

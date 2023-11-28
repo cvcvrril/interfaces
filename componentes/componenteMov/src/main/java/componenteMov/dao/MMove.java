@@ -1,24 +1,24 @@
 package componenteMov.dao;
 
 import componenteMov.common.Constantes;
-import componenteMov.domain.Room;
+import Model.Room;
 
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
 
-public class mMove extends JPanel implements mMoveInterface {
+public class MMove extends JPanel implements MMoveInterface {
     private List<Room> rooms;
-    private mMoveListener listener;
+    private MMoveListener listener;
     private final JTextArea textAreaButtons = new JTextArea(10, 20);
     private final JButton buttonNorth = new JButton(Constantes.NORTE);
     private final JButton buttonWest = new JButton(Constantes.OESTE);
     private final JButton buttonSouth = new JButton(Constantes.SUR);
     private final JButton buttonEast = new JButton(Constantes.ESTE);
 
-    public mMove(LayoutManager layout) {
+    public MMove(LayoutManager layout) {
         super(layout);
-        this.listener = new mMoveListener();
+        this.listener = new MMoveListener();
         botones();
 
     }
