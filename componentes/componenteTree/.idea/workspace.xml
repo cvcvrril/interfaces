@@ -9,7 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d552db54-226d-4355-a999-a057f5639487" name="Changes" comment="23/11/2023 10:40" />
+    <list default="true" id="d552db54-226d-4355-a999-a057f5639487" name="Changes" comment="23/11/2023 10:40">
+      <change beforePath="$PROJECT_DIR$/../componenteMov/src/main/java/componenteMov/dao/MMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/../componenteMov/src/main/java/componenteMov/dao/MMove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../componenteMov/src/main/java/componenteMov/dao/MMoveListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../componenteMov/src/main/java/componenteMov/dao/MMoveListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/componenteTree_jar/componenteTree.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/componenteTree_jar/componenteTree.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/componenteTree/MTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/componenteTree/MTreeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../componentesMazmorraIS/lib/componenteMov.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../componentesMazmorraIS/lib/componenteMov.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../componentesMazmorraIS/lib/componenteTree.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../componentesMazmorraIS/lib/componenteTree.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../componentesMazmorraIS/src/main/java/componentesMazmorra/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../componentesMazmorraIS/src/main/java/componentesMazmorra/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,25 +47,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/sonia/OneDrive/Documentos/GitHub/interfaces/componentes/componenteTree",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -92,6 +103,7 @@
       <workItem from="1700727144068" duration="5292000" />
       <workItem from="1700733742387" duration="322000" />
       <workItem from="1701173002609" duration="391000" />
+      <workItem from="1701191876414" duration="1615000" />
     </task>
     <task id="LOCAL-00001" summary="23/11/2023 10:40">
       <option name="closed" value="true" />

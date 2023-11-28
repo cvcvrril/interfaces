@@ -1,115 +1,110 @@
 package componenteMov.dao;
 
-import componenteMov.common.Constantes;
 import Model.Room;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.List;
 
 public class MMove extends JPanel implements MMoveInterface {
-    private List<Room> rooms;
+
+
+    private java.util.List<Room> rooms;
     private MMoveListener listener;
-    private final JTextArea textAreaButtons = new JTextArea(10, 20);
-    private final JButton buttonNorth = new JButton(Constantes.NORTE);
-    private final JButton buttonWest = new JButton(Constantes.OESTE);
-    private final JButton buttonSouth = new JButton(Constantes.SUR);
-    private final JButton buttonEast = new JButton(Constantes.ESTE);
 
-    public MMove(LayoutManager layout) {
-        super(layout);
-        this.listener = new MMoveListener();
-        botones();
+    private JButton north;
+    private JButton south;
+    private JButton west;
+    private JButton east;
 
+    private JTextArea actualRoomDescription;
+
+    public MMove(MMoveListener listener) {
+        //super();
+        this.listener = listener;
+        initComponente();
     }
 
-    private void botones() {
-        add(buttonNorth, BorderLayout.NORTH);
-        add(buttonSouth, BorderLayout.SOUTH);
-        textAreaButtons.setEditable(true);
-        add(buttonEast, BorderLayout.EAST);
-        add(buttonWest, BorderLayout.WEST);
+    private void initComponente() {
+        actualRoomDescription = new JTextArea("COMENZAR");
+
+        north = new JButton("North");
+        north.setEnabled(false);
+        south = new JButton("South");
+        south.setEnabled(false);
+        west = new JButton("West");
+        west.setEnabled(false);
+        east = new JButton("East");
+        east.setEnabled(false);
+
+        setLayout(new BorderLayout());
+        add(north, BorderLayout.NORTH);
+        add(south, BorderLayout.SOUTH);
+        add(west, BorderLayout.WEST);
+        add(east, BorderLayout.EAST);
+        add(actualRoomDescription, BorderLayout.CENTER);
     }
 
-    public MMoveListener getListener() {
-        return listener;
-    }
-
-    public JTextArea getTextAreaButtons() {
-        return textAreaButtons;
-    }
-
-    public JButton getButtonNorth() {
-        return buttonNorth;
-    }
-
-    public JButton getButtonWest() {
-        return buttonWest;
-    }
-
-    public JButton getButtonSouth() {
-        return buttonSouth;
-    }
-
-    public JButton getButtonEast() {
-        return buttonEast;
+    @Override
+    public void setRooms(java.util.List<Room> rooms) {
+        this.rooms = rooms;
     }
 
     @Override
     public void loadRoom(Room room) {
-        buttonNorth.setEnabled(false);
-        buttonSouth.setEnabled(false);
-        buttonWest.setEnabled(false);
-        buttonEast.setEnabled(false);
+        north.setEnabled(false);
+        south.setEnabled(false);
+        west.setEnabled(false);
+        east.setEnabled(false);
 
-        textAreaButtons.setText(room.getDescription());
+        actualRoomDescription.setText(room.getDescription());
+
         room.getDoors().forEach(door -> {
-            if (door.getName().equalsIgnoreCase(Constantes.NORTE)) {
-                buttonNorth.setEnabled(true);
-                buttonNorth.removeActionListener(buttonNorth.getActionListeners().length > 0 ? buttonNorth.getActionListeners()[0] : null);
-                buttonNorth.addActionListener(e -> {
+            if (door.getName().equalsIgnoreCase("Norte")) {
+                north.setEnabled(true);
+                north.removeActionListener(north.getActionListeners().length > 0 ? north.getActionListeners()[0] : null);
+                north.addActionListener(e -> {
                     Room nextRoom = rooms.stream()
                             .filter(r -> r.getId()
-                                    .equalsIgnoreCase(room.getDoors().stream().filter(d -> d.getName().equalsIgnoreCase(Constantes.NORTE))
+                                    .equalsIgnoreCase(room.getDoors().stream().filter(d -> d.getName().equalsIgnoreCase("Norte"))
                                             .findFirst().get()
                                             .getDest())
                             ).findFirst().get();
                     listener.roomUpdated(nextRoom);
                     loadRoom(nextRoom);
                 });
-            } else if (door.getName().equalsIgnoreCase(Constantes.SUR)) {
-                buttonSouth.setEnabled(true);
-                buttonSouth.removeActionListener(buttonSouth.getActionListeners().length > 0 ? buttonSouth.getActionListeners()[0] : null);
-                buttonSouth.addActionListener(e -> {
+            } else if (door.getName().equalsIgnoreCase("Sur")) {
+                south.setEnabled(true);
+                south.removeActionListener(south.getActionListeners().length > 0 ? south.getActionListeners()[0] : null);
+                south.addActionListener(e -> {
                     Room nextRoom = rooms.stream()
                             .filter(r -> r.getId()
-                                    .equalsIgnoreCase(room.getDoors().stream().filter(d -> d.getName().equalsIgnoreCase(Constantes.SUR))
+                                    .equalsIgnoreCase(room.getDoors().stream().filter(d -> d.getName().equalsIgnoreCase("Sur"))
                                             .findFirst().get()
                                             .getDest())
                             ).findFirst().get();
                     listener.roomUpdated(nextRoom);
                     loadRoom(nextRoom);
                 });
-            } else if (door.getName().equalsIgnoreCase(Constantes.OESTE)) {
-                buttonWest.setEnabled(true);
-                buttonWest.removeActionListener(buttonWest.getActionListeners().length > 0 ? buttonWest.getActionListeners()[0] : null);
-                buttonWest.addActionListener(e -> {
+            } else if (door.getName().equalsIgnoreCase("Oeste")) {
+                west.setEnabled(true);
+                west.removeActionListener(west.getActionListeners().length > 0 ? west.getActionListeners()[0] : null);
+                west.addActionListener(e -> {
                     Room nextRoom = rooms.stream()
                             .filter(r -> r.getId()
-                                    .equalsIgnoreCase(room.getDoors().stream().filter(d -> d.getName().equalsIgnoreCase(Constantes.OESTE))
+                                    .equalsIgnoreCase(room.getDoors().stream().filter(d -> d.getName().equalsIgnoreCase("Oeste"))
                                             .findFirst().get()
                                             .getDest())
                             ).findFirst().get();
                     listener.roomUpdated(nextRoom);
                     loadRoom(nextRoom);
                 });
-            } else if (door.getName().equalsIgnoreCase(Constantes.ESTE)) {
-                buttonEast.setEnabled(true);
-                buttonEast.removeActionListener(buttonEast.getActionListeners().length > 0 ? buttonEast.getActionListeners()[0] : null);
-                buttonEast.addActionListener(e -> {
+            } else if (door.getName().equalsIgnoreCase("Este")) {
+                east.setEnabled(true);
+                east.removeActionListener(east.getActionListeners().length > 0 ? east.getActionListeners()[0] : null);
+                east.addActionListener(e -> {
                     Room nextRoom = rooms.stream()
                             .filter(r -> r.getId()
-                                    .equalsIgnoreCase(room.getDoors().stream().filter(d -> d.getName().equalsIgnoreCase(Constantes.ESTE))
+                                    .equalsIgnoreCase(room.getDoors().stream().filter(d -> d.getName().equalsIgnoreCase("Este"))
                                             .findFirst().get()
                                             .getDest())
                             ).findFirst().get();
@@ -118,9 +113,5 @@ public class MMove extends JPanel implements MMoveInterface {
                 });
             }
         });
-    }
-    @Override
-    public void setRooms(List<Room> rooms) {
-        this.rooms = rooms;
     }
 }
