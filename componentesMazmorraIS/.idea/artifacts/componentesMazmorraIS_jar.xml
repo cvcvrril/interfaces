@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="componentesMazmorraIS:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/componentesMazmorraIS_jar</output-path>
+    <root id="archive" name="componentesMazmorraIS.jar">
+      <element id="module-output" name="componentesMazmorraIS" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/componenteMov.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/componenteLoad.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/componenteTree.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/componenteLog.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/componenteLoad.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/componenteLog.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/componenteMov.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/lib/componenteTree.jar" />
+    </root>
+  </artifact>
+</component>
