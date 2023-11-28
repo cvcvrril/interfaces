@@ -1,5 +1,4 @@
-package componentesMazmorra.model;
-import componenteMov.domain.Door;
+package Model;
 
 import java.util.List;
 

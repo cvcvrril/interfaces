@@ -31,6 +31,30 @@ public class MMove extends JPanel implements MMoveInterface {
         add(buttonWest, BorderLayout.WEST);
     }
 
+    public MMoveListener getListener() {
+        return listener;
+    }
+
+    public JTextArea getTextAreaButtons() {
+        return textAreaButtons;
+    }
+
+    public JButton getButtonNorth() {
+        return buttonNorth;
+    }
+
+    public JButton getButtonWest() {
+        return buttonWest;
+    }
+
+    public JButton getButtonSouth() {
+        return buttonSouth;
+    }
+
+    public JButton getButtonEast() {
+        return buttonEast;
+    }
+
     @Override
     public void loadRoom(Room room) {
         buttonNorth.setEnabled(false);
