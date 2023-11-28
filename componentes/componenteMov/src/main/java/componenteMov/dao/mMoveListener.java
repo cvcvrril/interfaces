@@ -1,6 +1,6 @@
 package componenteMov.dao;
 
-import componenteMov.common.Constantes;
+import componenteMov.domain.Door;
 import componenteMov.domain.Room;
 
 import java.util.ArrayList;
@@ -10,9 +10,11 @@ public class mMoveListener implements mMoveListenerInterface {
     private List<String> locations= new ArrayList<>();
     @Override
     public void roomUpdated(Room room) {
-        buttonNorth.setEnabled(room.getDoorDestination(Constantes.NORTE) != null);
-        buttonSouth.setEnabled(room.getDoorDestination(Constantes.SUR) != null);
-        buttonEast.setEnabled(room.getDoorDestination(Constantes.ESTE) != null);
-        buttonWest.setEnabled(room.getDoorDestination(Constantes.OESTE) != null);
+        for (Door door:room.getDoors()) {
+            locations.add(door.getName());
+        }
+    }
+    public List<String> getLocations() {
+        return locations;
     }
 }
