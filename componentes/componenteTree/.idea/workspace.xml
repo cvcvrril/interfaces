@@ -62,7 +62,7 @@
       <module name="componenteTree" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="componenteTree.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

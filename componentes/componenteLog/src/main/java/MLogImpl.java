@@ -1,10 +1,8 @@
-package componenteLog;
-
 import javax.swing.*;
 
-public class mLogImpl extends JTextArea implements mLog{
+public class MLogImpl extends JTextArea implements MLog {
 
-    public mLogImpl(){
+    public MLogImpl(){
         super();
         this.setEditable(false);
         this.setRows(10);

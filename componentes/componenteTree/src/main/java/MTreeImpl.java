@@ -1,15 +1,13 @@
-package componenteTree;
-
-import componenteTree.model.Door;
-import componenteTree.model.Dungeon;
-import componenteTree.model.Room;
+import Model.Door;
+import Model.Dungeon;
+import Model.Room;
 
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import java.util.List;
 
-public class mTreeImpl extends JTree implements MTree {
+public class MTreeImpl extends JTree implements MTree {
 
     @Override
     public void createJTree(Dungeon dungeon) {

@@ -1,4 +1,4 @@
-package componenteLog.model;
+package Model;
 
 import java.util.List;
 
