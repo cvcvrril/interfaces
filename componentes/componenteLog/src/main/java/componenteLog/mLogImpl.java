@@ -9,9 +9,7 @@ public class mLogImpl extends JTextArea implements mLog{
         this.setEditable(false);
         this.setRows(10);
         this.setColumns(30);
-
     }
-
 
     @Override
     public void addLogMessage(String message) {
