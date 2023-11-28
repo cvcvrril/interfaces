@@ -1,0 +1,57 @@
+<Dungeon>
+    <room id="R7">
+        <door name="Norte" dest="R4" />
+        <door name="Este" dest="R8" />
+        <description>Al entrar en esta habitación notas como la temperatura desciende,<br/> es mejor que no pases aquí mucho tiempo...</description>
+    </room>
+    <room id="R4">
+        <door name="Norte" dest="R1" />
+        <door name="Sur" dest="R7" />
+        <door name="Este" dest="R5" />
+        <description>Las paredes y el techo están llenas de marcas,<br/> como si alguien hubiese contado los dias que ha pasado aqui dentro</description>
+    </room>
+    <room id="R1">
+        <door name="Sur" dest="R4" />
+        <door name="Este" dest="R2" />
+        <description>Al entrar puedes ver un grupo de huesos en la esquina noroeste, decides mantenerte alejado.</description>
+    </room>
+
+    <!-- Fila 2 -->
+    <room id="R8">
+        <door name="Norte" dest="R5" />
+        <door name="Oeste" dest="R7" />
+        <door name="Este" dest="R9" />
+        <description>La habitación es acolchada, hay manchas por todas partes, y desprende un olor putrefacto</description>
+    </room>
+    <room id="R5">
+        <door name="Norte" dest="R2" />
+        <door name="Sur" dest="R8" />
+        <door name="Oeste" dest="R4" />
+        <door name="Este" dest="R6" />
+        <description>Estas en el centro de la mazmorra</description>
+    </room>
+    <room id="R2">
+        <door name="Sur" dest="R5" />
+        <door name="Oeste" dest="R1" />
+        <door name="Este" dest="R3" />
+        <description>Entras en una habitación que contiene un cartel en el que pone..."Corre".</description>
+    </room>
+
+    <!-- Fila 3 -->
+    <room id="R9">
+        <door name="Norte" dest="R6" />
+        <door name="Oeste" dest="R8" />
+        <description>Te adentras en una habitación humeda,<br/> te recorre un escalofrío.</description>
+    </room>
+    <room id="R6">
+        <door name="Norte" dest="R3" />
+        <door name="Sur" dest="R9" />
+        <door name="Oeste" dest="R5" />
+        <description>Al entrar en la habitación te llega un olor indistinguible pero familiar, el rancio olor a cenicero... <br/>¿Por que huele a cenicero?</description>
+    </room>
+    <room id="R3">
+        <door name="Sur" dest="R6" />
+        <door name="Oeste" dest="R2" />
+        <description>Esta habitacion contiene una celda, sus barrotes están arrancados...</description>
+    </room>
+</Dungeon>
