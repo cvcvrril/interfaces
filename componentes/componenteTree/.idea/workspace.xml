@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d552db54-226d-4355-a999-a057f5639487" name="Changes" comment="23/11/2023 10:40">
-      <change beforePath="$PROJECT_DIR$/../../componentesMazmorraIS/lib/componenteLoad.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../componentesMazmorraIS/lib/componenteLog.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../componentesMazmorraIS/lib/componenteMov.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../componentesMazmorraIS/lib/componenteTree.jar" beforeDir="false" />
-    </list>
+    <list default="true" id="d552db54-226d-4355-a999-a057f5639487" name="Changes" comment="23/11/2023 10:40" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +91,7 @@
       <updated>1700727142954</updated>
       <workItem from="1700727144068" duration="5292000" />
       <workItem from="1700733742387" duration="322000" />
-      <workItem from="1701173002609" duration="304000" />
+      <workItem from="1701173002609" duration="391000" />
     </task>
     <task id="LOCAL-00001" summary="23/11/2023 10:40">
       <option name="closed" value="true" />

@@ -1,3 +1,5 @@
+package componenteTree;
+
 import Model.Dungeon;
 
 public interface MTree {

@@ -1,3 +1,5 @@
+package componenteLog;
+
 import javax.swing.*;
 
 public class MLogImpl extends JTextArea implements MLog {

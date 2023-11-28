@@ -1,3 +1,5 @@
+package componenteTree;
+
 import Model.Door;
 import Model.Dungeon;
 import Model.Room;
