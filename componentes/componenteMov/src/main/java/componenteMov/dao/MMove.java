@@ -25,8 +25,8 @@ public class MMove extends JPanel implements MMoveInterface {
     }
 
     private void initComponente() {
-        actualRoomDescription = new JTextArea("COMENZAR");
-
+        actualRoomDescription = new JTextArea("");
+        actualRoomDescription.setFocusable(false);
         north = new JButton("North");
         north.setEnabled(false);
         south = new JButton("South");

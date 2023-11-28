@@ -11,14 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d552db54-226d-4355-a999-a057f5639487" name="Changes" comment="23/11/2023 10:40">
       <change beforePath="$PROJECT_DIR$/../componenteMov/src/main/java/componenteMov/dao/MMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/../componenteMov/src/main/java/componenteMov/dao/MMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../componenteMov/src/main/java/componenteMov/dao/MMoveListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../componenteMov/src/main/java/componenteMov/dao/MMoveListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/componenteTree_jar/componenteTree.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/componenteTree_jar/componenteTree.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/componenteTree/MTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/componenteTree/MTreeImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../componentesMazmorraIS/lib/componenteMov.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../componentesMazmorraIS/lib/componenteMov.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../componentesMazmorraIS/lib/componenteTree.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../../componentesMazmorraIS/lib/componenteTree.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../componentesMazmorraIS/src/main/java/componentesMazmorra/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../componentesMazmorraIS/src/main/java/componentesMazmorra/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
