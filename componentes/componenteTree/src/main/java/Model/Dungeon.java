@@ -1,4 +1,4 @@
-package componenteTree.model;
+package Model;
 
 import java.util.List;
 
