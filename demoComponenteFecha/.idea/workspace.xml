@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="534ef0da-c8c8-41ae-b4c1-f1c86b2ee766" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../componentesMazmorraIS/src/main/java/componentesMazmorra/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../componentesMazmorraIS/src/main/java/componentesMazmorra/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_11_2023_8_42__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_11_2023_8_42__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/4/e44a8606ce010ad9b89aafdfcee2ab49afbf6d10" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +38,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/2dam/Documents/cosos/GH/interfaces/demoComponenteFecha/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/2dam/Documents/cosos/GH/interfaces/demoComponenteFecha/lib/componenteFecha.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -44,6 +46,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.21149425&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -78,6 +81,9 @@
       <workItem from="1701156819806" duration="802000" />
       <workItem from="1701159043527" duration="11000" />
       <workItem from="1701160995763" duration="300000" />
+      <workItem from="1701161482377" duration="1655000" />
+      <workItem from="1701170314819" duration="15000" />
+      <workItem from="1701170348618" duration="5000" />
     </task>
     <servers />
   </component>
