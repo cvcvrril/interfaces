@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: componentesMazmorra.Main
+Class-Path: ./lib/componenteLog.jar ./lib/componenteLoad.jar ./lib/componenteTree.jar
+
