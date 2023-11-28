@@ -1,6 +1,6 @@
 package componenteMov.domain;
-
 import java.util.List;
+
 
 public class Room {
     private String id;

@@ -1,17 +1,18 @@
 package componenteMov.dao;
 
+import componenteMov.common.Constantes;
 import componenteMov.domain.Room;
-import org.w3c.dom.NodeList;
 
-public class mMoveListener implements mMoveListenerInterface{
+import java.util.ArrayList;
+import java.util.List;
+
+public class mMoveListener implements mMoveListenerInterface {
+    private List<String> locations= new ArrayList<>();
     @Override
     public void roomUpdated(Room room) {
-        String destinationRoomId = currentRoom.getDoorDestination(direction);
-            room = rooms.get(destinationRoomId);
-            textAreaButtons.setText(currentRoom.getDescription());
-            enableDirectionButtons(currentRoom);
-            movimientosUsuario();
-        }
-
+        buttonNorth.setEnabled(room.getDoorDestination(Constantes.NORTE) != null);
+        buttonSouth.setEnabled(room.getDoorDestination(Constantes.SUR) != null);
+        buttonEast.setEnabled(room.getDoorDestination(Constantes.ESTE) != null);
+        buttonWest.setEnabled(room.getDoorDestination(Constantes.OESTE) != null);
     }
 }
