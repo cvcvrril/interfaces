@@ -1,0 +1,274 @@
+Index: ../componentes/componenteMov/src/main/java/componenteMov/Main.java
+===================================================================
+diff --git a/../componentes/componenteMov/src/main/java/componenteMov/Main.java b/../componentes/componenteMov/src/main/java/componenteMov/Main.java
+deleted file mode 100644
+--- a/../componentes/componenteMov/src/main/java/componenteMov/Main.java	(revision 6c36af3e940ebad1c47acb4a0357a48caaa5569b)
++++ /dev/null	(revision 6c36af3e940ebad1c47acb4a0357a48caaa5569b)
+@@ -1,8 +0,0 @@
+-package componenteMov;
+-
+-public class Main {
+-
+-    public static void main(String[] args) {
+-
+-    }
+-}
+Index: ../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveListener.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveListener.java b/../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveListener.java
+new file mode 100644
+--- /dev/null	(date 1700733702397)
++++ b/../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveListener.java	(date 1700733702397)
+@@ -0,0 +1,17 @@
++package componenteMov.dao;
++
++import componenteMov.domain.Room;
++import org.w3c.dom.NodeList;
++
++public class mMoveListener implements mMoveListenerInterface{
++    @Override
++    public void roomUpdated(Room room) {
++        String destinationRoomId = currentRoom.getDoorDestination(direction);
++            room = rooms.get(destinationRoomId);
++            textAreaButtons.setText(currentRoom.getDescription());
++            enableDirectionButtons(currentRoom);
++            movimientosUsuario();
++        }
++
++    }
++}
+Index: ../componentes/componenteMov/src/main/java/componenteMov/dao/mMove.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../componentes/componenteMov/src/main/java/componenteMov/dao/mMove.java b/../componentes/componenteMov/src/main/java/componenteMov/dao/mMove.java
+new file mode 100644
+--- /dev/null	(date 1700734251014)
++++ b/../componentes/componenteMov/src/main/java/componenteMov/dao/mMove.java	(date 1700734251014)
+@@ -0,0 +1,39 @@
++package componenteMov.dao;
++
++import componenteMov.common.Constantes;
++import componenteMov.domain.Room;
++
++import javax.swing.*;
++import java.awt.*;
++import java.util.List;
++
++public class mMove extends JPanel implements mMoveInterface {
++
++    private List<Room> rooms;
++    private mMoveListenerInterface listener;
++    private final JTextArea textAreaButtons = new JTextArea(10, 20);
++    private final JButton buttonNorth = new JButton(Constantes.NORTH);
++    private final JButton buttonWest = new JButton(Constantes.WEST);
++    private final JButton buttonSouth = new JButton(Constantes.SOUTH);
++    private final JButton buttonEast = new JButton(Constantes.EAST);
++    private JLabel actualRoomDescription;
++
++    public mMove(LayoutManager layout) {
++        super(layout);
++        add(buttonNorth, BorderLayout.NORTH);
++        add(buttonSouth, BorderLayout.SOUTH);
++        textAreaButtons.setEditable(true);
++        add(buttonEast, BorderLayout.EAST);
++        add(buttonWest, BorderLayout.WEST);
++    }
++
++    @Override
++    public void loadRoom(List<Room> room) {
++
++    }
++
++    @Override
++    public void setRoom(Room room) {
++
++    }
++}
+Index: ../componentes/componenteMov/src/main/java/componenteMov/common/Constantes.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../componentes/componenteMov/src/main/java/componenteMov/common/Constantes.java b/../componentes/componenteMov/src/main/java/componenteMov/common/Constantes.java
+new file mode 100644
+--- /dev/null	(date 1700734220362)
++++ b/../componentes/componenteMov/src/main/java/componenteMov/common/Constantes.java	(date 1700734220362)
+@@ -0,0 +1,28 @@
++package componenteMov.common;
++
++public class Constantes {
++    public static final String DUNGEON = "Dungeon";
++    public static final String ROOM = "room";
++    public static final String ID = "id";
++    public static final String DOOR = "door";
++    public static final String NAME = "name";
++    public static final String DEST = "dest";
++    public static final String FLECHITA = " -> ";
++    public static final String DESCRIPTION = "description";
++    public static final String INICIO = "R5";
++    public static final String NORTE = "Norte";
++    public static final String SUR = "Sur";
++    public static final String ESTE = "Este";
++    public static final String OESTE = "Oeste";
++    public static final String NORTH = "North";
++    public static final String WEST = "West";
++    public static final String SOUTH = "South";
++    public static final String EAST = "East";
++    public static final String DATA = "data";
++    public static final String XML = "xml";
++    public static final String XML_FILES_XML = "xml files (*.xml)";
++    public static final String MAZMORRA = "Mazmorra";
++    public static final String OPCIONES = "Opciones";
++    public static final String LOAD_FILE = "Load file";
++    public static final String START = "Start";
++}
+Index: ../componentes/componenteMov/src/main/java/componenteMov/domain/Door.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../componentes/componenteMov/src/main/java/componenteMov/domain/Door.java b/../componentes/componenteMov/src/main/java/componenteMov/domain/Door.java
+new file mode 100644
+--- /dev/null	(date 1700732859399)
++++ b/../componentes/componenteMov/src/main/java/componenteMov/domain/Door.java	(date 1700732859399)
+@@ -0,0 +1,19 @@
++package componenteMov.domain;
++
++
++public class Door {
++    private String location;
++    private String dest;
++    public String getName() {
++        return location;
++    }
++    public void setName(String location) {
++        this.location = location;
++    }
++    public String getDest() {
++        return dest;
++    }
++    public void setDest(String dest) {
++        this.dest = dest;
++    }
++}
+Index: ../componentes/componenteMov/src/main/java/componenteMov/domain/Dungeon.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../componentes/componenteMov/src/main/java/componenteMov/domain/Dungeon.java b/../componentes/componenteMov/src/main/java/componenteMov/domain/Dungeon.java
+new file mode 100644
+--- /dev/null	(date 1700732859412)
++++ b/../componentes/componenteMov/src/main/java/componenteMov/domain/Dungeon.java	(date 1700732859412)
+@@ -0,0 +1,15 @@
++package componenteMov.domain;
++
++import java.util.List;
++
++public class Dungeon {
++    private List<Room> rooms;
++
++    public List<Room> getRooms() {
++        return rooms;
++    }
++
++    public void setRooms(List<Room> rooms) {
++        this.rooms = rooms;
++    }
++}
+Index: ../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveInterface.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveInterface.java b/../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveInterface.java
+new file mode 100644
+--- /dev/null	(date 1700733050810)
++++ b/../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveInterface.java	(date 1700733050810)
+@@ -0,0 +1,10 @@
++package componenteMov.dao;
++
++import componenteMov.domain.Room;
++
++import java.util.List;
++
++public interface mMoveInterface {
++    void loadRoom(List<Room> room);
++    void setRoom(Room room);
++}
+Index: ../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveListenerInterface.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveListenerInterface.java b/../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveListenerInterface.java
+new file mode 100644
+--- /dev/null	(date 1700733043227)
++++ b/../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveListenerInterface.java	(date 1700733043227)
+@@ -0,0 +1,9 @@
++package componenteMov.dao;
++
++import componenteMov.domain.Room;
++
++import java.util.EventListener;
++
++public interface mMoveListenerInterface extends EventListener {
++    void roomUpdated(Room room);
++}
+Index: ../componentes/componenteMov/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_20\" default=\"true\" project-jdk-name=\"openjdk-20\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../componentes/componenteMov/.idea/misc.xml b/../componentes/componenteMov/.idea/misc.xml
+--- a/../componentes/componenteMov/.idea/misc.xml	(revision 6c36af3e940ebad1c47acb4a0357a48caaa5569b)
++++ b/../componentes/componenteMov/.idea/misc.xml	(date 1700732553058)
+@@ -1,4 +1,3 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ExternalStorageConfigurationManager" enabled="true" />
+   <component name="MavenProjectsManager">
+Index: ../componentes/componenteMov/src/main/java/componenteMov/domain/Room.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../componentes/componenteMov/src/main/java/componenteMov/domain/Room.java b/../componentes/componenteMov/src/main/java/componenteMov/domain/Room.java
+new file mode 100644
+--- /dev/null	(date 1700732859407)
++++ b/../componentes/componenteMov/src/main/java/componenteMov/domain/Room.java	(date 1700732859407)
+@@ -0,0 +1,27 @@
++package componenteMov.domain;
++
++import java.util.List;
++
++public class Room {
++    private String id;
++    private List<Door> doors;
++    private String description;
++    public String getId() {
++        return id;
++    }
++    public void setId(String id) {
++        this.id = id;
++    }
++    public List<Door> getDoors() {
++        return doors;
++    }
++    public void setDoors(List<Door> doors) {
++        this.doors = doors;
++    }
++    public String getDescription() {
++        return description;
++    }
++    public void setDescription(String description) {
++        this.description = description;
++    }
++}
