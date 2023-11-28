@@ -1,8 +1,8 @@
 package componenteLoad.dao;
 
-import componenteLoad.model.Dungeon;
+import Model.Dungeon;
 
-public interface mLoadInterface {
+public interface MLoadInterface {
     void loadXMLFile();
     Dungeon getDungeon();
 

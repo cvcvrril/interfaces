@@ -1,4 +1,4 @@
-package componenteLoad.model;
+package Model;
 
 import java.util.List;
 

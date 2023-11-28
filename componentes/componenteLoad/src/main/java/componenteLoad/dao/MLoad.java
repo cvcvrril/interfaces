@@ -1,9 +1,9 @@
 package componenteLoad.dao;
 
 import componenteLoad.common.Constantes;
-import componenteLoad.model.Door;
-import componenteLoad.model.Dungeon;
-import componenteLoad.model.Room;
+import Model.Door;
+import Model.Dungeon;
+import Model.Room;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class mLoad implements mLoadInterface {
+public class MLoad implements MLoadInterface{
     private Dungeon dungeon;
 
     @Override

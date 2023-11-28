@@ -1,4 +1,4 @@
-package componenteLoad.model;
+package Model;
 
 
 public class Door {
