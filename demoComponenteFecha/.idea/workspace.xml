@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="534ef0da-c8c8-41ae-b4c1-f1c86b2ee766" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../componentes/componenteMov/src/main/java/componenteMov/common/Constantes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componentes/componenteMov/src/main/java/componenteMov/dao/mMove.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componentes/componenteMov/src/main/java/componenteMov/dao/mMoveListenerInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componentes/componenteMov/src/main/java/componenteMov/domain/Door.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componentes/componenteMov/src/main/java/componenteMov/domain/Dungeon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../componentes/componenteMov/src/main/java/componenteMov/domain/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../componentes/componenteMov/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../componentes/componenteMov/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../componentes/componenteMov/src/main/java/componenteMov/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Demo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +72,6 @@
       <option name="presentableId" value="Default" />
       <updated>1700124522913</updated>
       <workItem from="1700124523906" duration="3631000" />
-      <workItem from="1701157284125" duration="148000" />
     </task>
     <servers />
   </component>
